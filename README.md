@@ -8,5 +8,9 @@ Cyclistic's current objective is to grow its annual subscriber base by transitio
 
 The data used in this analysis comes from publicly available historical bike trip data provided by Motivate International Inc. While the dataset has been adapted for the fictional Cyclistic case study, it is based on real-world information from a bike-sharing system. Due to privacy concerns, personally identifiable information has been removed, ensuring compliance with data security and confidentiality standards.
 
-## Analysis 🧹
+## 🧹 Data Cleaning and Preparation
 
+- Loaded the data into Google Sheets and created a copy to keep the original version intact.
+- Adjusted formatting by centering titles and resizing columns for better visibility.
+- Used Google Sheets' "Data Cleaning" function to remove duplicate records and trim unnecessary spaces.
+- Extracted the start and end day and time of trips, creating the columns `start_day`, `start_hour`, `end_day`, and `end_hour`.
