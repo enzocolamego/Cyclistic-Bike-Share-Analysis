@@ -10,7 +10,7 @@ The data used in this analysis comes from publicly available historical bike tri
 
 ## 🧹 Data Cleaning and Preparation
 
-- Loaded the data into Google Sheets and created a copy [bike data.csv] to keep the original version intact.
+- Loaded the data into Google Sheets and created a copy to keep the original version intact.
 - Adjusted formatting by centering titles and resizing columns for better visibility.
 - Used Google Sheets' "Data Cleaning" function to remove duplicate records and trim unnecessary spaces.
 - Extracted the start and end day and time of trips, creating the columns `start_day`, `start_hour`, `end_day`, and `end_hour`.
