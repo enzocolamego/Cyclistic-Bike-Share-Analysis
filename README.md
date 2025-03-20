@@ -13,4 +13,6 @@ The data used in this analysis comes from publicly available historical bike tri
 - Loaded the data into Google Sheets and created a [copy](bike%20data.csv) to keep the original version intact.
 - Adjusted formatting by centering titles and resizing columns for better visibility.
 - Used Google Sheets' "Data Cleaning" function to remove duplicate records and trim unnecessary spaces.
-- Extracted the start and end day and time of trips, creating the columns `start_day`, `start_hour`, `end_day`, and `end_hour`.
+- Extracted the start and end day and time from ‘started_at’ and ‘ended_at’, creating the columns `start_day`, `start_hour`, `end_day`, and `end_hour`.
+- Created a new column named `weekday` using the function "=DIA.DA.SEMANA()". This function returns a number representing the day of the week for a given date.
+- Downloaded the new data and used [python](data_cleaning.ipynb) to perform additional cleaning.
