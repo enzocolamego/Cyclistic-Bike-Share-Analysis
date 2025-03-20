@@ -1,6 +1,6 @@
 # Cyclistic-Bike-Share-Analysis
 
-## Context
+## 📌 Context
 
 **Cyclistic** is a fictional bike-sharing company based in Chicago. The company operates a system with over 5,800 bicycles and 600 docking stations, allowing users to rent and return bikes at any station within the network. The company’s business model is based on three pricing plans: single-ride passes, full-day passes, and annual memberships, with annual members being the most profitable segment.
 
@@ -16,3 +16,6 @@ The data used in this analysis comes from publicly available historical bike tri
 - Extracted the start and end day and time from ‘started_at’ and ‘ended_at’, creating the columns `start_day`, `start_hour`, `end_day`, and `end_hour`.
 - Created a new column named `weekday` using the function "=DIA.DA.SEMANA()". This function returns a number representing the day of the week for a given date.
 - Downloaded the new data and used [python](data_cleaning.ipynb) to perform additional cleaning.
+
+## 📊 Analyzes
+
