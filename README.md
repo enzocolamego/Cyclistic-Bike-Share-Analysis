@@ -53,3 +53,11 @@ I made a [heatmap](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis
 Members use bicycles for significantly longer overall than casual riders, primarily due to their larger numbers. However, casual riders have a higher average usage time per ride.
 
 Data analysis shows that casual riders use bicycles most on weekends and Fridays, while members ride more consistently throughout the week. This suggests that members primarily use bikes for **commuting and exercise**, whereas casual riders use them for **leisure**. The evening period generally sees the least activity, except on Fridays when casual riders ride more at night than in the morning—likely because it’s the last workday of the week. On Sundays, evening usage drops sharply as people prepare for the workweek ahead.
+
+I wanted to see if there was a preference for bike type, classic or electric, across user types and time of day.
+
+
+Casual:
+![Image](https://github.com/user-attachments/assets/91b2f3fd-e87e-45fd-b56f-d9eb8bd82031)
+
+![Image](https://github.com/user-attachments/assets/8b825857-9414-43d7-8fbe-9fb9f1673ad0)
