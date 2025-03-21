@@ -82,4 +82,5 @@ Despite similar graph shapes across bike types, electric bikes show a noticeable
 A final analysis I conducted was to identify the most frequently used [start](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/start%20stations%20code.SQL) and [end](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/end%20stations%20code.SQL) stations among members and casual riders using SQL. The analysis reveals the three most popular start and end stations, segmented by user type. We observe a significant concentration of member activity at Kingsbury St & Kinzie St station, while casual riders heavily utilize the Streeter Dr & Grand Ave station. 
 
 [Most used start stations](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/start%20stations%20result.csv)
+
 [Most used end stations](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/end%20stations%20result.csv)
