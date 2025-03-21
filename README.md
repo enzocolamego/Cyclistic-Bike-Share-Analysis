@@ -29,3 +29,6 @@ The data used in this analysis comes from publicly available historical bike tri
 **Thursday** has the lowest activity.
 
 I decided to analyze the distribution of casual and member users throughout the day. I did this by dividing the day into four 6-hour periods: morning, afternoon, evening, and dawn, using the formula `=COUNTIFS('202411-divvy-tripdata.csv'!$E$2:$E,">=06:00:00.00",'202411-divvy-tripdata.csv'!$E$2:$E,"<12:00:00.000",'202411-divvy-tripdata.csv'!$Q$2:$Q,"casual",'202411-divvy-tripdata.csv'!$R$2:$R,1)` varying the time ranges and the user type.
+
+
+![Image](https://github.com/user-attachments/assets/212eece8-c53a-45ef-b9e7-5ed6b57e92e2)
