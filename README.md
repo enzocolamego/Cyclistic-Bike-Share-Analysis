@@ -32,3 +32,15 @@ I decided to analyze the distribution of casual and member users throughout the 
 
 
 ![Image](https://github.com/user-attachments/assets/212eece8-c53a-45ef-b9e7-5ed6b57e92e2)
+
+
+![Image](https://github.com/user-attachments/assets/6838ce32-5448-4593-bc9b-5fa652f2e198)
+
+
+![Image](https://github.com/user-attachments/assets/bb259383-30f6-4faf-be94-c649f5ef5ca9)
+
+
+![Image](https://github.com/user-attachments/assets/f3e1992e-9ae7-41a2-9fdb-2fea4b1bcbea)
+
+
+
