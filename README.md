@@ -20,3 +20,4 @@ The data used in this analysis comes from publicly available historical bike tri
 ## 📊 Analyzes
 
 - From the table, I created a pivot table with `member_casual` as columns and `weekday` as rows.
+- ![Image](https://github.com/user-attachments/assets/2367be7e-316d-40eb-a630-004c4c91c1bf)
