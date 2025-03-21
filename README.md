@@ -58,6 +58,7 @@ I wanted to see if there was a preference for bike type, classic or electric, ac
 
 
 Casual:
+
 ![Image](https://github.com/user-attachments/assets/91b2f3fd-e87e-45fd-b56f-d9eb8bd82031)
 
 ![Image](https://github.com/user-attachments/assets/8b825857-9414-43d7-8fbe-9fb9f1673ad0)
