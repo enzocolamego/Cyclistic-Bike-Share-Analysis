@@ -43,4 +43,7 @@ I decided to analyze the distribution of casual and member users throughout the 
 ![Image](https://github.com/user-attachments/assets/f3e1992e-9ae7-41a2-9fdb-2fea4b1bcbea)
 
 
+I made a [heatmap](heatmap.R) to provide a different visual representation.
 
+
+![Image](https://github.com/user-attachments/assets/ac7397fa-cc0e-4a7a-b6ff-fad69cfce6a4)
