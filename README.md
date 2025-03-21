@@ -2,9 +2,9 @@
 
 ## 📌 Context
 
-**Cyclistic** is a fictional bike-sharing company based in Chicago. The company operates a system with over 5,800 bicycles and 600 docking stations, allowing users to rent and return bikes at any station within the network. The company’s business model is based on three pricing plans: single-ride passes, full-day passes, and annual memberships, with annual members being the most profitable segment.(:)
+**Cyclistic** is a fictional bike-sharing company based in Chicago. The company operates a system with over 5,800 bicycles and 600 docking stations, allowing users to rent and return bikes at any station within the network. The company’s business model is based on three pricing plans: single-ride passes, full-day passes, and annual memberships, with annual members being the most profitable segment.
 
-Cyclistic's current objective is to grow its annual subscriber base by transitioning casual riders to memberships. My goal is to deliver data-driven insights to inform marketing strategies focused on conversion, with a key component being the analysis and reporting of behavioral variations between casual and member user groups.:
+Cyclistic's current objective is to grow its annual subscriber base by transitioning casual riders to memberships. My goal is to deliver data-driven insights to inform marketing strategies focused on conversion, with a key component being the analysis and reporting of behavioral variations between casual and member user groups.
 
 The data used in this analysis comes from publicly available historical bike trip data provided by Motivate International Inc. While the dataset has been adapted for the fictional Cyclistic case study, it is based on real-world information from a bike-sharing system. Due to privacy concerns, personally identifiable information has been removed, ensuring compliance with data security and confidentiality standards.
 
@@ -76,3 +76,5 @@ Member:
 ![Image](https://github.com/user-attachments/assets/2ba0ee2f-39c7-45db-bab4-7b8fbf216058)
 
 ![Image](https://github.com/user-attachments/assets/08764377-5b06-4b2b-a678-6a43542c48b8)
+
+Despite similar graph shapes across bike types, electric bikes show a noticeable preference. Casual riders use them 10.89% more than classic bikes, and members 11.01% more, suggesting comfort and convenience as key factors. This observation is corroborated by the analogous graph formations for different bike types, with the electric bike graphs consistently demonstrating an upward trend, signifying higher values.
