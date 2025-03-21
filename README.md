@@ -78,3 +78,5 @@ Member:
 ![Image](https://github.com/user-attachments/assets/08764377-5b06-4b2b-a678-6a43542c48b8)
 
 Despite similar graph shapes across bike types, electric bikes show a noticeable preference. Casual riders use them 10.89% more than classic bikes, and members 11.01% more, suggesting comfort and convenience as key factors. This observation is corroborated by the analogous graph formations for different bike types, with the electric bike graphs consistently demonstrating an upward trend, signifying higher values.
+
+A final analysis I conducted was to identify the most frequently used [start](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/start%20stations%20code.SQL) and [end](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/end%20stations%20code.SQL) stations among members and casual riders.
