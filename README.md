@@ -43,8 +43,9 @@ I decided to analyze the distribution of casual and member users throughout the 
 
 ![Image](https://github.com/user-attachments/assets/f3e1992e-9ae7-41a2-9fdb-2fea4b1bcbea)
 
+Analyzing user behavior, it's possible to identify a usage pattern where afternoon periods are the busiest, followed by morning, evening, and early morning, for both casual riders and members
 
-I made a [heatmap](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/heatmap.R) to provide a different visual representation.
+I made a [heatmap](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/heatmap.R) to provide a different visual representation of the time distribution.
 
 
 ![Image](https://github.com/user-attachments/assets/ac7397fa-cc0e-4a7a-b6ff-fad69cfce6a4)
