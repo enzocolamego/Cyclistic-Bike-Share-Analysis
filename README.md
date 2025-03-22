@@ -46,7 +46,7 @@ Decidi analisar a distribuição de usuários casuais e membros ao longo do dia.
 
 Analisando o comportamento dos usuários, é possível identificar um padrão de uso em que os períodos da tarde são os mais movimentados, seguidos pela manhã, noite e madrugada, tanto para casuais quanto para membros.
 
-I made a [heatmap](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/heatmap.R) to provide a different visual representation of the time distribution.
+Eu criei um [mapa de calor](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/heatmap.R) para fornecer uma representação visual diferente da distribuição de tempo.
 
 
 ![Image](https://github.com/user-attachments/assets/ac7397fa-cc0e-4a7a-b6ff-fad69cfce6a4)
