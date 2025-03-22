@@ -57,7 +57,7 @@ Data analysis shows that casual riders use bicycles most on weekends and Fridays
 I wanted to see if there was a preference for bike type, classic or electric, across user types and time of day.
 
 
-Casual:
+### Casual:
 
 ![Image](https://github.com/user-attachments/assets/91b2f3fd-e87e-45fd-b56f-d9eb8bd82031)
 
@@ -67,7 +67,7 @@ Casual:
 
 ![Image](https://github.com/user-attachments/assets/cf14bca7-45cb-4475-9468-7fe0356568d2)
 
-Member:
+### Member:
 
 ![Image](https://github.com/user-attachments/assets/7c9f8f3b-a5fe-4d05-966c-1cef9c33b53f)
 
@@ -81,7 +81,7 @@ Despite similar graph shapes across bike types, electric bikes show a noticeable
 
 A final analysis I conducted was to identify the most frequently used [start](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/start%20stations%20code.SQL) and [end](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/end%20stations%20code.SQL) stations among members and casual riders using SQL. The analysis reveals the three most popular start and end stations, segmented by user type. We observe a significant concentration of member activity at Kingsbury St & Kinzie St station, while casual riders heavily utilize the Streeter Dr & Grand Ave station. 
 
-Full result:
+### Full result:
 
 - [Most used start stations](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/start%20stations%20result.csv)
 - [Most used end stations](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/end%20stations%20result.csv)
