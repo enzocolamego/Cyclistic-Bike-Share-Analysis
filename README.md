@@ -21,6 +21,7 @@ The data used in this analysis comes from publicly available historical bike tri
 
 
 - From the table, I created a pivot table with `member_casual` as columns and `weekday` as rows.
+- I used python to see some basics [statistics](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/different%20statistics.ipynb) per user type
 
 
 ![Image](https://github.com/user-attachments/assets/2367be7e-316d-40eb-a630-004c4c91c1bf)
