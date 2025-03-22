@@ -21,11 +21,11 @@ heatmap_data <- copy_bike_data %>%
 heatmap_data <- heatmap_data %>%
   complete(weekday = 1:7, time, member_casual, fill = list(count = 0))
 
-heatmap_data$weekday <- factor(heatmap_data$weekday, levels = 1:7, labels = c("Dom","Seg","Ter","Qua","Qui","Sex","Sab"))
+heatmap_data$weekday <- factor(heatmap_data$weekday, levels = 1:7, labels = c("Sun","Mon","Tue","Wed","Thu","Fri","Sat"))
 
 ggplot(heatmap_data, aes(x=weekday, y=time, fill = count)) +
   geom_tile() +
   scale_fill_gradient2(low = "lightsteelblue", midpoint = -150, high = "darkblue") +
-  labs(title = "Heatmap", x = "Dias da semana", y = "Horários") +
+  labs(title = "Heatmap", x = "Day of week", y = "Time") +
   facet_wrap(~ member_casual) +
   theme(plot.title = element_text(hjust = 0.5))
