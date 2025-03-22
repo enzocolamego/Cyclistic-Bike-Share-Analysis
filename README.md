@@ -89,4 +89,6 @@ A final analysis I conducted was to identify the most frequently used [start](ht
 
   ## 💡 Insights
 
-  
+  - Given the high concentration of casual riders at Streeter Dr & Grand Ave, DuSable Lake Shore Dr & Monroe St, and Millennium Park stations, implementing geolocalized marketing campaigns tailored to casual users could significantly boost membership conversion rates.
+  - Although casual riders constitute only 27% of total users, they exhibit a higher average ride duration than members. Offering a special trial membership discount to casual riders who complete a certain number of trips within a month could effectively generate interest in annual memberships.
+  - Casual rider usage of Cyclistic services reaches its highest point on weekends and Fridays, specifically from 10 AM to 4 PM. Offering promotional campaigns and discounts during these times could effectively attract new members.
