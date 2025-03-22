@@ -11,8 +11,11 @@ Os dados utilizados nesta análise provêm de dados históricos de viagens de bi
 ## 🛠️ Ferramentas e Linguagens Utilizadas
 
 Python - Google Colab
+
 R - RStudio
+
 SQL - BigQuery
+
 Planilhas - Google Sheets
 
 ## 🧹 Limpeza e Preparação dos Dados
