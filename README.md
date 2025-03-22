@@ -8,6 +8,13 @@ O objetivo atual da Cyclistic é aumentar sua base de assinantes anuais, convert
 
 Os dados utilizados nesta análise provêm de dados históricos de viagens de bicicleta disponíveis publicamente, fornecidos pela Motivate International Inc. Embora o conjunto de dados tenha sido adaptado para o estudo de caso fictício da Cyclistic, ele é baseado em informações do mundo real de um sistema de compartilhamento de bicicletas. Devido a preocupações com a privacidade, informações de identificação pessoal foram removidas, garantindo a conformidade com os padrões de segurança e confidencialidade de dados.
 
+## 🛠️ Ferramentas e Linguagens Utilizadas
+
+Python - Google Colab
+R - RStudio
+SQL - BigQuery
+Planilhas - Google Sheets
+
 ## 🧹 Limpeza e Preparação dos Dados
 
 - Carreguei os dados no Google Sheets e criei uma [cópia](bike%20data.csv) para manter a versão original intacta.
