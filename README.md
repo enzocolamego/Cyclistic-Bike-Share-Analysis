@@ -36,11 +36,11 @@ Planilhas - Google Sheets
 ![Image](https://github.com/user-attachments/assets/2367be7e-316d-40eb-a630-004c4c91c1bf)
 
 
-- Usei Python para ver algumas [estatísticas](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/different%20statistics.ipynb) básicas por tipo de usuário.
-
 **Sexta** é o dia mais movimentado.
 
 **Quinta** possui a menor atividade.
+
+- Usei Python para ver algumas [estatísticas](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/different%20statistics.ipynb) básicas por tipo de usuário.
 
 Decidi analisar a distribuição de usuários casuais e membros ao longo do dia. Fiz isso dividindo o dia em quatro períodos de 6 horas: manhã, tarde, noite e madrugada, usando a fórmula `=COUNTIFS('202411-divvy-tripdata.csv'!$E$2:$E,">=06:00:00.00",'202411-divvy-tripdata.csv'!$E$2:$E,"<12:00:00.000",'202411-divvy-tripdata.csv'!$Q$2:$Q,"casual",'202411-divvy-tripdata.csv'!$R$2:$R,1)` variando os intervalos de tempo e o tipo de usuário.
 
