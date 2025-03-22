@@ -23,7 +23,7 @@ Planilhas - Google Sheets
 - Carreguei os dados no Google Sheets e criei uma [cópia](bike%20data.csv) para manter a versão original intacta.
 - Ajustei a formatação centralizando os títulos e redimensionando as colunas para melhor visibilidade.
 - Usei a função "Limpeza de Dados" do Google Sheets para remover registros duplicados e aparar espaços desnecessários.
-- EExtraí o dia e a hora de início e fim de 'started_at' e 'ended_at', criando as colunas `start_day`, `start_hour`, `end_day` e `end_hour`.
+- Extraí o dia e a hora de início e fim de 'started_at' e 'ended_at', criando as colunas `start_day`, `start_hour`, `end_day` e `end_hour`.
 - Criei uma nova coluna chamada `weekday` usando a função "=DIA.DA.SEMANA()". Esta função retorna um número representando o dia da semana para uma determinada data.
 - Baixei os novos dados e usei [python](data_cleaning.ipynb) para realizar algumas limpezas adicionais.
 
