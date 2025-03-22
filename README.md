@@ -31,11 +31,12 @@ Planilhas - Google Sheets
 
 
 - A partir da tabela, criei uma tabela dinâmica com `member_casual` como colunas e `weekday` como linhas.
-- Usei Python para ver algumas [estatísticas](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/different%20statistics.ipynb) básicas por tipo de usuário.
 
 
 ![Image](https://github.com/user-attachments/assets/2367be7e-316d-40eb-a630-004c4c91c1bf)
 
+
+- Usei Python para ver algumas [estatísticas](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/different%20statistics.ipynb) básicas por tipo de usuário.
 
 **Sexta** é o dia mais movimentado.
 
