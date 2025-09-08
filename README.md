@@ -1,14 +1,14 @@
-# Análise de Compartilhamento de Bicicletas Cyclistic
+# Cyclistic Bike Share Analysis
 
-## 📌 Contexto
+## 📌 Context
 
-**Cyclistic** é uma empresa fictícia de compartilhamento de bicicletas com sede em Chicago. A empresa opera um sistema com mais de 5.800 bicicletas e 600 estações de ancoragem, permitindo que os usuários aluguem e devolvam bicicletas em qualquer estação dentro da rede. O modelo de negócios da empresa é baseado em três planos de preços: passes para viagens individuais, passes de dia inteiro e assinaturas anuais, sendo os membros anuais o segmento mais lucrativo.
+**Cyclistic** is a fictional bicycle rental company based in Chicago. The company manage a system with more than 5800 bicycles and 600 docking stations, allowing users to rent and return bikes at any station within the network. The company’s business model is based on three pricing plans: single-ride passes, full-day passes, and annual memberships, with annual members being the most profitable segment.
 
-O objetivo atual da Cyclistic é aumentar sua base de assinantes anuais, convertendo usuários casuais em membros. Meu objetivo é fornecer insights baseados em dados para informar estratégias de marketing focadas em conversão, com um componente chave sendo a análise e o relatório das variações comportamentais entre os grupos de usuários casuais e membros.
+Cyclistic’s current goal is to increase its base of annual subscribers by converting casual riders into members. My objective is to provide data-driven insights to inform marketing strategies focused on conversion, with a key component being the analysis and reporting of behavioral differences between casual users and members.
 
-Os dados utilizados nesta análise provêm de dados históricos de viagens de bicicleta disponíveis publicamente, fornecidos pela Motivate International Inc. Embora o conjunto de dados tenha sido adaptado para o estudo de caso fictício da Cyclistic, ele é baseado em informações do mundo real de um sistema de compartilhamento de bicicletas. Devido a preocupações com a privacidade, informações de identificação pessoal foram removidas, garantindo a conformidade com os padrões de segurança e confidencialidade de dados.
+The data used in this analysis comes from publicly available historical bike trip data provided by Motivate International Inc. Although the dataset has been adapted for the fictional Cyclistic case study, it is based on real-world information from a bike-sharing system. Due to privacy concerns, personally identifiable information has been removed, ensuring compliance with data security and confidentiality standards.
 
-## 🛠️ Ferramentas e Linguagens Utilizadas
+## 🛠️ Tools and Languages Used
 
 Python - Google Colab
 
@@ -16,33 +16,33 @@ R - RStudio
 
 SQL - BigQuery
 
-Planilhas - Google Sheets
+Spreadsheets - Google Sheets
 
-## 🧹 Limpeza e Preparação dos Dados
+## 🧹 Data Cleaning and Preparation
 
-- Carreguei os dados no Google Sheets e criei uma [cópia](bike%20data.csv) para manter a versão original intacta.
-- Ajustei a formatação centralizando os títulos e redimensionando as colunas para melhor visibilidade.
-- Usei a função "Limpeza de Dados" do Google Sheets para remover registros duplicados e aparar espaços desnecessários.
-- Extraí o dia e a hora de início e fim de 'started_at' e 'ended_at', criando as colunas `start_day`, `start_hour`, `end_day` e `end_hour`.
-- Criei uma nova coluna chamada `weekday` usando a função "=DIA.DA.SEMANA()". Esta função retorna um número representando o dia da semana para uma determinada data.
-- Baixei os novos dados e usei [python](data_cleaning.ipynb) para realizar algumas limpezas adicionais.
+- Loaded the data into Google Sheets and created a [copy](bike%20data.csv) to keep the original version intact.
+- Adjusted formatting by centering headers and resizing columns for better visibility.
+- Used the “Data Cleanup” function in Google Sheets to remove duplicate records and trim unnecessary spaces.
+- Extracted the day and time of trip start and end from 'started_at' and 'ended_at', creating the columns `start_day`, `start_hour`, `end_day` and `end_hour`.
+- Created a new column called `weekday` using the function "=WEEKDAY()". This function returns a number representing the day of the week for a given date
+- Downloaded the new dataset and used [Python](data_cleaning.ipynb) to perform additional cleaning.
 
-## 📊 Análise
+## 📊 Analysis
 
 
-- A partir da tabela, criei uma tabela dinâmica com `member_casual` como colunas e `weekday` como linhas.
+- From the table, I created a pivot table with `member_casual` as columns and `weekday` as rows.
 
 
 ![Image](https://github.com/user-attachments/assets/2367be7e-316d-40eb-a630-004c4c91c1bf)
 
 
-**Sexta** é o dia mais movimentado.
+**Friday** is the busiest day.
 
-**Quinta** possui a menor atividade.
+**Thursday** has the lowest activity.
 
-- Usei Python para ver algumas [estatísticas](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/different%20statistics.ipynb) básicas por tipo de usuário.
+- I used Python to generate some basic [statistics](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/different%20statistics.ipynb) by user type.
 
-Decidi analisar a distribuição de usuários casuais e membros ao longo do dia. Fiz isso dividindo o dia em quatro períodos de 6 horas: manhã, tarde, noite e madrugada, usando a fórmula `=COUNTIFS('202411-divvy-tripdata.csv'!$E$2:$E,">=06:00:00.00",'202411-divvy-tripdata.csv'!$E$2:$E,"<12:00:00.000",'202411-divvy-tripdata.csv'!$Q$2:$Q,"casual",'202411-divvy-tripdata.csv'!$R$2:$R,1)` variando os intervalos de tempo e o tipo de usuário.
+I decided to analyze the distribution of casual users and members throughout the day. To do this, I divided the day into four 6-hour periods: morning, afternoon, evening, and night, using the formula `=COUNTIFS('202411-divvy-tripdata.csv'!$E$2:$E,">=06:00:00.00",'202411-divvy-tripdata.csv'!$E$2:$E,"<12:00:00.000",'202411-divvy-tripdata.csv'!$Q$2:$Q,"casual",'202411-divvy-tripdata.csv'!$R$2:$R,1)` varying time intervals and user type.
 
 
 ![Image](https://github.com/user-attachments/assets/212eece8-c53a-45ef-b9e7-5ed6b57e92e2)
@@ -56,22 +56,22 @@ Decidi analisar a distribuição de usuários casuais e membros ao longo do dia.
 
 ![Image](https://github.com/user-attachments/assets/f3e1992e-9ae7-41a2-9fdb-2fea4b1bcbea)
 
-Analisando o comportamento dos usuários, é possível identificar um padrão de uso em que os períodos da tarde são os mais movimentados, seguidos pela manhã, noite e madrugada, tanto para casuais quanto para membros.
+Analyzing user behavior, it is possible to identify a usage pattern where afternoons are the busiest period, followed by mornings, evenings, and nights, for both casuals and members.
 
-Eu criei um [mapa de calor](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/heatmap.R) para fornecer uma representação visual diferente da distribuição de tempo.
+I created a [heatmap](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/heatmap.R) to provide a different visual representation of time distribution.
 
 
 ![Image](https://github.com/user-attachments/assets/ac7397fa-cc0e-4a7a-b6ff-fad69cfce6a4)
 
 
-Membros usam bicicletas por um período geral significativamente maior do que usuários casuais, principalmente devido ao seu maior número. No entanto, usuários casuais têm um tempo médio de uso por viagem mais alto.
+Members use bikes for a significantly larger total amount of time than casual users, mainly due to their greater numbers. However, casual users have a higher average ride duration.
 
-A análise de dados mostra que usuários casuais usam bicicletas principalmente nos fins de semana e nas sextas-feiras, enquanto membros pedalam de forma mais consistente ao longo da semana. Isso sugere que membros usam bicicletas principalmente para deslocamento e exercício, enquanto usuários casuais as usam para lazer. O período da noite geralmente tem a menor atividade, exceto nas sextas-feiras, quando usuários casuais pedalam mais à noite do que de manhã — provavelmente porque é o último dia útil da semana. Aos domingos, o uso noturno cai acentuadamente à medida que as pessoas se preparam para a semana de trabalho que se inicia.
+The data analysis shows that casual users ride primarily on weekends and Fridays, while members ride more consistently throughout the week. This suggests that members use bikes mainly for commuting and exercise, while casual users ride for leisure. Evenings generally have the lowest activity, except on Fridays, when casual users ride more at night than in the morning—likely because it’s the last workday of the week. On Sundays, nighttime usage drops sharply as people prepare for the upcoming workweek.
 
-Eu queria ver se havia uma preferência por tipo de bicicleta, clássica ou elétrica, entre os tipos de usuários e a hora do dia.
+I also wanted to check if there was a preference for bike type, classic or electric, depending on user type and time of day.
 
 
-### Casuais:
+### Casuals:
 
 ![Image](https://github.com/user-attachments/assets/91b2f3fd-e87e-45fd-b56f-d9eb8bd82031)
 
@@ -81,7 +81,7 @@ Eu queria ver se havia uma preferência por tipo de bicicleta, clássica ou elé
 
 ![Image](https://github.com/user-attachments/assets/cf14bca7-45cb-4475-9468-7fe0356568d2)
 
-### Membros:
+### Members:
 
 ![Image](https://github.com/user-attachments/assets/7c9f8f3b-a5fe-4d05-966c-1cef9c33b53f)
 
@@ -91,19 +91,19 @@ Eu queria ver se havia uma preferência por tipo de bicicleta, clássica ou elé
 
 ![Image](https://github.com/user-attachments/assets/08764377-5b06-4b2b-a678-6a43542c48b8)
 
-Apesar de formatos de gráficos semelhantes entre os tipos de bicicletas, as bicicletas elétricas mostram uma preferência notável. Ciclistas casuais as usam 10,89% mais do que bicicletas clássicas, e membros 11,01% mais, sugerindo conforto e conveniência como fatores-chave. Esta observação é corroborada pelas formações de gráficos análogas para diferentes tipos de bicicletas, com os gráficos de bicicletas elétricas demonstrando consistentemente uma tendência ascendente, significando valores mais altos.
+Despite similar chart patterns between bike types, electric bikes show a notable preference. Casual riders use them 10.89% more than classic bikes, and members 11.01% more, suggesting comfort and convenience as key factors. This observation is reinforced by the analogous chart patterns across bike types, with electric bike charts consistently showing upward trends, indicating higher values.
 
-Uma análise final que realizei foi identificar as estações de [inicio](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/start%20stations%20code.SQL) e [fim](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/end%20stations%20code.SQL) mais frequentemente utilizadas entre membros e usuários casuais, usando SQL. A análise revela as três estações de início e fim mais populares, segmentadas por tipo de usuário. Observamos uma concentração significativa de atividade de membros na estação Kingsbury St & Kinzie St, enquanto usuários casuais utilizam intensamente a estação Streeter Dr & Grand Ave. 
+A final analysis I conducted was identifying the most frequently used [start stations](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/start%20stations%20code.SQL) and [end stations](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/end%20stations%20code.SQL) for members and casual users, using SQL. The analysis reveals the top three start and end stations by user type. We observed a significant concentration of member activity at Kingsbury St & Kinzie St station, while casual users heavily rely on Streeter Dr & Grand Ave station.
 
-### Resultado completo:
+### Full Results:
 
-- [Estações mais utilizada para inicio de corrida](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/start%20stations%20result.csv)
-- [Estações mais utilizada para fim de corrida](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/end%20stations%20result.csv)
+- [Most used start stations](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/start%20stations%20result.csv)
+- [Most used end stations](https://github.com/enzocolamego/Cyclistic-Bike-Share-Analysis/blob/main/analysis/end%20stations%20result.csv)
 
   ## 💡 Insights
 
-  - Dada a alta concentração de passageiros casuais nas estações `Streeter Dr & Grand Ave`, `DuSable Lake Shore Dr & Monroe St` e `Millennium Park`, implementar campanhas de marketing geolocalizadas e adaptadas aos usuários casuais pode aumentar significativamente as taxas de conversão de membros.
+  - Given the high concentration of casual riders at the `Streeter Dr & Grand Ave`, `DuSable Lake Shore Dr & Monroe St` and `Millennium Park` stations, implementing geo-targeted marketing campaigns tailored to casual users could significantly increase membership conversion rates.
     
-  - Embora os passageiros casuais constituam apenas 27% do total de usuários, eles apresentam uma duração média de viagem maior do que os membros. Oferecer um desconto especial de teste de associação para passageiros casuais que concluem um certo número de viagens em um mês pode efetivamente gerar interesse em associações anuais.
+  - Although casual riders account for only 27% of total users, they have a higher average ride duration than members. Offering a special trial membership discount to casual riders who complete a certain number of trips in a month could effectively generate interest in annual memberships.
     
-  - O uso casual dos serviços Cyclistic por ciclistas atinge seu ponto mais alto nos fins de semana e sextas-feiras, especificamente das 10h às 16h. Oferecer campanhas promocionais e descontos durante esses horários pode efetivamente atrair novos membros.
+  - Casual riders’ usage peaks on weekends and Fridays, specifically from 10 AM to 4 PM. Launching promotional campaigns and discounts during these timeframes could effectively attract new members.
